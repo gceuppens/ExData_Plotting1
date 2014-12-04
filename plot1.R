@@ -46,6 +46,8 @@ readData <- function() {
                 colClasses = c("character", "character", rep("numeric", 7)))
     headers <- names(dt)
     
+    # Requires the data.table library
+    library(data.table)
     # Now read the data table starting from the 1/2/2007 entry
     dt <- fread(localName, na.strings = "?", header = FALSE,
                 sep = ";", skip = "1/2/2007", 
