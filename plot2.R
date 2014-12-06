@@ -15,6 +15,8 @@ plot2 <- function() {
     #
     
     # Open a PNG device
+    # -- Note that the background in the example pictures is transparent, not
+    #    white!
     pngDevice <- png(filename = "figure/plot2.png",
                      bg = "transparent",
                      width = 480, height = 480) # these are also the default
